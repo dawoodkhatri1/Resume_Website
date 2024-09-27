@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Serif Text", serif;
+}
+body{
+    background: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    display:grid ;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 1); 
+}
+.container .left_side{
+    position: relative;
+    background: #a85632;
+    padding: 40px;
+}
+
+.profileText{
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: column;
+padding-bottom: 20px;
+border-bottom:1px solid rgba(255, 255, 255, 0.2) ;
+}
+
+.profileText .ImgBx{
+position: relative;
+width: 300px;
+height: 300px;
+border-radius: 50%;
+overflow: hidden;
+}
+
+.profileText .ImgBx img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.profileText h2{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+
+}
+
+.profileText h2 span{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.contactInfo{
+    padding-top: 40px;
+}
+
+.ContactInfo ul{
+    position: relative;
+}
+
+.ContactInfo ul li{
+    position: relative;
+    list-style: none;
+    margin:10px 0;
+    cursor: pointer;
+}
+
+.ContactInfo ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: black;
+}
+
+.ContactInfo ul li span{
+    color:white;
+    font-weight: 300;
+}
+
+.ContactInfo.Education li{
+  margin-bottom: 15px;
+}
+
+.ContactInfo.Education li h5{
+   color: black;
+   font-weight: 500;
+}
+
+    .ContactInfo.Education li h4:nth-child(2) {
+        color: rgb(1, 2, 54);
+        font-weight: 500;
+    }
+
+.ContactInfo.education h4 {
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.ContactInfo h3 {
+   color: black;
+   font-weight: 500;
+   margin-bottom: 24px;
+}
+
+.ContactInfo.Languages .percentage {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: white;
+    display: block;
+    margin-top: 5px;
+}
+
+    .ContactInfo.Languages .percentage div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background: chartreuse;
+    }
+
+.container .rigth_side {
+    position: relative;
+    background: #ffffff;
+    padding: 40px;
+}
+
+.about {
+    margin-bottom: 10%;
+}
+
+    .about:last-child {
+        margin-bottom: 0;
+    }
+
+.title_2 {
+    color: rgb(224, 130, 7);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: rgb(2, 1, 1);
+    font-size: small;
+}
+
+.about .box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+    .about .box .year_company {
+        min-width: 150px;
+    }
+
+        .about .box .year_company h5 {
+            text-transform: uppercase;
+            color: brown;
+            font-weight: 500;
+        }
+
+    .about .box .text h4 {
+        text-transform: uppercase;
+        color: aquamarine;
+        font-size: 16px;
+    }
+
+.skills .box {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+    .skills .box h4 {
+        text-transform: uppercase;
+        color: brown;
+        font-weight: 500;
+    }
+
+    .skills .box .percent {
+        position: relative;
+        width: 100%;
+        height: 10px;
+    }
+
+        .skills .box .percent div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background: aquamarine;
+        }
+
+@media(max-width: 540px){
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 280px){
+    .profileText .ImgBx {
+        width: 200px;
+        height: 200px;
+    }
+    .about .box{
+        display:flex;
+        flex-direction:column;
+    }
+    .skills .box {
+        display: flex;
+        flex-direction: column;
+    }
+}
